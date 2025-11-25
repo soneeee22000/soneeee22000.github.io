@@ -1,0 +1,421 @@
+baseURL = 'http://example.org/'
+languageCode = "en-us"
+title = "Seon Page"
+theme = "hugoProfileReforge"
+[pagination]
+pagerSize = 3
+enableRobotsTXT = true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+page = [ "HTML", "RSS" ]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+#[[Menus.main]]
+#identifier = "blog"
+#name = "Blog"
+#title = "Blog posts"
+#url = "/blogs"
+#weight = 1
+
+#[[Menus.main]]
+#identifier = "gallery"
+#name = "Gallery"
+#title = "Blog posts"
+#url = "/gallery"
+#weight = 2
+
+[params]
+title = "Seon Page"
+description = "Text about my cool site"
+favicon = "/images/fav.png"
+useBootstrapCDN = false
+animate = true
+
+  [params.font]
+  fontSize = "1rem"
+  fontWeight = 400
+  lineHeight = 1.5
+  textAlign = "left"
+
+  [params.navbar]
+  align = "ms-auto"
+  brandName = "portfolio"
+  disableSearch = false
+
+    [params.navbar.menus]
+    disableAbout = false
+    disableExperience = false
+    disableEducation = false
+    disableProjects = false
+    disableAchievements = false
+    disableContact = false
+
+  [params.hero]
+  enable = true
+  intro = 'မင်္ဂလာပါ | Bonjour | สวัสดี | Hello'
+  #intro = "Hi, my name is"
+  title = "I am Pyae Sone Kyaw."
+  subtitle = "<span class=\"nick\">You can call me \"Seon\".</span>Data Scientist | AI Engineer | AI Researcher"
+  content = """ I am a Dual Master's Degree Graduate in Data Science and Artificial Intelligence from top univerisites across Asia and Europe. I have a strong foundation in machine learning, deep learning, and data analysis, with hands-on experience in various projects and research work. I am passionate about leveraging data to drive insights and solve complex problems. """
+  image = "/images/IMG_7449.JPG"
+
+    [params.hero.bottomImage]
+    enable = true
+
+#    [params.hero.button]
+ #   enable = true
+  #  name = "Github"
+   # url = "https://github.com/soneeee22000"
+  #  download = false
+  #  newPage = true
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-github"
+url = "https://github.com/soneeee22000"
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-linkedin"
+url = "https://www.linkedin.com/in/pyae-sone-kyaw-80386721b/"
+
+#[[params.hero.socialLinks.customIcons]]
+#icon = "/fav.png"
+#url = "https://example.com"
+
+  [params.about]
+  enable = true
+  title = "About Me"
+  image = "/images/seon.jpg"
+  content = """
+
+  I am a Data Scientist and AI Researcher with a dual Master's background in Data Science, Artificial Intelligence, and Social Sciences. 
+  My work spans deep learning, NLP, computer vision, and agentic AI systems, with a strong interest in building impactful tools for Burmese and global communities. 
+  I have experience designing end-to-end cloud data pipelines, developing evaluation-driven AI experiments, and contributing to smart city analytics as the sole data scientist in a fast-paced startup environment. 
+  Beyond technical depth, I bring strengths in linguistics, research design, and human-centric problem solving. 
+  I primarily code in Python (PyTorch, scikit-learn, FastAPI), and I am experienced with Azure, Docker, Git, microservice architectures, and full-stack prototyping. 
+  Ultimately, I aspire to build socially impactful AI products and future startups under my personal brand "Ahkkara".
+
+"""
+
+    [params.about.skills]
+    enable = true
+    title = "Here are a few technologies I've been working with recently:"
+    mainitem = "https://www.vectorlogo.zone/logos/docker/docker-official.svg"
+    items = ["https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg","https://www.vectorlogo.zone/logos/python/python-ar21.svg","https://img.icons8.com/?size=100&id=ewGOClUtmFX4&format=png&color=000000","https://www.vectorlogo.zone/logos/grpcio/grpcio-ar21.svg","https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg","https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg","https://www.vectorlogo.zone/logos/neo4j/neo4j-ar21.svg","https://plotly.com/chart-studio-help/images/logo-light.svg","https://www.vectorlogo.zone/logos/gitlab/gitlab-ar21.svg","https://www.vectorlogo.zone/logos/github/github-ar21.svg"]
+
+
+  [params.experience]
+  enable = true
+
+    [[params.experience.items]]
+    job = "Data Scientist/Cloud Engineer"
+    company = "Floware X École Polytechnique Incubator"
+    companyUrl = "https://www.polytechnique.edu/novationcenter/incubateur"
+    date = "Jul 2024 - Jun 2025"
+    content = "Work Experience Summary: I completed a 6 month internship at **Floware SAS**, a French deeptech startup specializing in urban mobility analysis, where I designed and implemented a **cloud-based batch data processing pipeline** using Microsoft Azure Batch and Docker.The project automated workflows for **Computer Vision** and **Bluetooth sensor data**, enabling scalable mobility insights and client‑ready analytics. While I cannot share the proprietary code, my [Internship Report (PDF)](https://github.com/soneeee22000/My_Masters_Internship_Report_Floware) and the [Floware SAS website](https://floware.fr) provide detailed documentation of the work and its impact.This experience also marked the completion of my **Dual Master’s in Data Science, AI & Network Intelligence**. I also want to share the exam project that got me this job in the first place for your reference: [Sensor Data Analysis Interview Project.](https://github.com/soneeee22000/Deep_Tech_Smart_City_Mobility_Interview_Coding_Project_Exam)"
+
+
+
+    [[params.experience.items]]
+    job = "Research Assistant"
+    company = "Data Intelligence and Communication Engineering Lab"
+    companyUrl = "https://dice.wp.telecom-sudparis.eu/"
+    date = "Aug 2023  - Jul 2024"
+    content = "At the **Data Intelligence and Communication Engineering (DICE) Lab**, I developed a complete **English–Myanmar machine translation pipeline** built on a 10K gold‑labeled Wikihow parallel corpus that I manually created and curated. My work covered **dataset construction, model training, evaluation design, and deployment**, including experiments with multilingual MT backbones, reproducible training scripts, and optimized inference for low‑resource languages.I am currently extending this project by building a **public translation API** and a **Chrome extension** that enables real‑time English–Myanmar translation directly on Wikihow webpage, enabling Burmese readers with accurate how-to-instructions articles translation. This research contributes to the lab’s mission of advancing intelligent communication systems. More details about the lab can be found at the [DICE Lab website](https://dice.wp.telecom-sudparis.eu/team/)."
+
+
+  [params.education]
+  enable = true
+  index = false
+
+# 1st School
+    [[params.education.items]]
+    title = "Master of Science in Data Science and Network Intelligence "
+    date = "2023 - 2024"
+    GPA = "15.15/20"
+    content = """
+I believe that pursuing this degree in Paris, France has been a transformative experience for me.
+It has equipped me with advanced knowledge and skills in data science, machine learning, and network intelligence.
+Especially since I get to study in `one of the top engineering school in France`, Telecom SudParis-IP Paris, which is renowned for its excellence in technology and innovation.
+Also, I am grateful for the opportunity to immerse myself in French culture and language, which has broadened my perspective and enriched my personal growth.
+My employment at a start-up in the incubator program of Ecole Polytechnique has also given me practical insights into entrepreneurship and innovation.
+I get to **apply theoretical concepts learned in class to real-world scenarios**, enhancing my problem-solving abilities and adaptability in dynamic environments.
+
+It's always good to learn that Our School is advancing in University Rankings - 46th worldwide in QS World University Rankings 2025. Check it out [here](https://ait.ac.th/program/dual-degree-masters-program-with-telecom-sud-paris/)
+
+    """
+      [params.education.items.school]
+      name = "Telecom SudParis"
+      url = "https://telecom-sudparis.eu/"
+
+# 2nd School
+
+    [[params.education.items]]
+    title = "Master of Science in Data Science and Artificial Intelligence"
+    date = "2022 - 2024"
+    GPA = "3.17 / 4.0"
+    content = """
+This program provided me with a strong foundation in data science and artificial intelligence.
+I started gaining experience designing end-to-end data pipelines, developing machine learning models, and conducting AI research here.
+I also grew passionate about leveraging data to **drive insights and solve complex problems.**
+I am glad to have pursued a MSc. at AIT, since not only because of its intense curriculum,but also it exposed me to diverse international perspectives through its multicultural environment for the first time in my life.
+Finally, I am grateful that the institute provided me with a great opportunity to study in 
+`dual Masters' degree program with Telecom SudParis`.
+
+You can check out the [Program Brochure of AIT here](https://ait.ac.th/program/dual-degree-masters-program-with-telecom-sud-paris/) or [that of TSP here.](https://ait.ac.th/program/dual-degree-masters-program-with-telecom-sud-paris/)
+
+              """
+      [params.education.items.school]
+      name = "Asian Institute of Technology"
+      url = "https://www.ait.ac.th/"
+
+# 3rd School
+    [[params.education.items]]
+    title = "Bachelor of Arts in Social Science Studies"
+    date = "2016 - 2020"
+    GPA = "3.67/4.0"
+    content = """
+I have a great time in MIT to learn about Social Science.
+In fact, MIT was the first university who accepted me after I took the entrance exam and passed it, immediately out of high school.
+It opened my mind to see various social issues from different perspectives.
+I finally managed to **find beauty in diversity**.
+As I learned to appreciate different cultures and beliefs, I also developed my critical thinking and communication skills.
+I learn about how society work and how to conduct research in social science field.
+It was fun to discuss with my classmates and lecturers about various social issues and think critically about possible solutions.
+It was also interesting to learn about different research methods and how to apply them in real-world contexts.
+Maybe I `enjoyed it so much that I ended up topping the class` with highest GPA in my batch. hahaxx
+    """
+
+      [params.education.items.school]
+      name = "Myanmar Institute of Theology"
+      url = "https://mit-portfolio.netlify.app/"
+#4th school
+
+    [[params.education.items]]
+    title = "Bachelor of Arts in English Literature and Linguistics"
+    date = "2016 - 2020 (Interrupted due to COVID and Military Coup)"
+    GPA = "4.09/5.0(Completed Third Year CGPA)"
+    content = """
+    
+I have always been fascinated by the intricacies of language and its power to shape our understanding of the world.
+**Poetry** being a particular passion of mine, I decided to pursue a degree that would allow me to explore this interest further.
+Through my studies, I explored various literary works and linguistic theories,honing my analytical and critical thinking skills.
+This academic journey enriched my appreciation for language and the science behind it.
+It also equipped me with valuable research and communication skills that continue to benefit me in both personal and professional contexts.
+Plus, `Yangon University is the oldest and most prestigious university in Myanmar`, and I am proud to have been a part of its academic community.
+It was one of the most memorable experience that has shaped who I am today. 
+I plan to finish this degree when the situation in Myanmar gets better.
+    """
+
+      [params.education.items.school]
+      name = "University of Yangon"
+      url = "https://www.uy.edu.mm/"
+
+      #[params.education.items.featuredLink]
+      #enable = true
+      #name = "My academic record"
+      #url = "https://example.com"
+
+# To change to certificate
+
+  [params.achievements]
+  enable = true
+
+    [[params.achievements.items]]
+    title = "Machine Learning Specialization"
+    content = "I solved all coding & theoretical problems with optimal solution for this specialization by Andrew Ng `Standford-DeepLearning.AI` on Coursera."
+    url = "https://coursera.org/share/946625f9bdea354d2f8da22c15c66ee4"
+
+    [[params.achievements.items]]
+    title = "Python for Everybody Specialization"
+    content = "I solved all coding & theoretical problems with optimal solution for this specialization by Dr. Charles Severance on Coursera."
+    url = "https://coursera.org/share/a9cc4447ca3d46ca7785cd2e7f655476"
+
+    [[params.achievements.items]]
+    title = "Agile Development and Scrum"
+    content = "Completed Agile Development and Scrum course- a part of DevOps Specialization by IBM on Coursera."
+    url = "https://coursera.org/share/8358fd39d8b8896c54f93d33f5372843"
+
+# Project
+
+  [params.projects]
+  enable = true
+
+    [[params.projects.items]]
+    title = "PsychHealth AI with RAG"
+    content = "an Ongoing Project : A NLP application that provides mental health support using Retrieval-Augmented Generation (RAG) techniques that combine pre-trained language models with external knowledge sources."
+    image = "/images/projects/nlpapp.png"
+    badges = [ "NLP","pytorch","Hugging Face" ]
+
+      [params.projects.items.featured]
+      name = "Demo"
+      link = "https://psych-ai-rag-mvp.streamlit.app/"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/soneeee22000/Psych_ai_with_RAG"
+
+
+  # PROJECT 2
+    [[params.projects.items]]
+    title = "Mario Bros on the Rainbow- Deep Reinforcement Learning for Super Mario"
+    content = "Using RAINBOW, a varient of Deep Q-learning, to train an agent for super mario playing - currently building the environment and training the model."
+    image = "/images/projects/rainbros2.gif"
+    badges = [ "reinforcement learning","pytorch","gym" ]
+
+      [params.projects.items.featured]
+      name = "Read"
+      link = "https://github.com/Curt-Park/rainbow-is-all-you-need"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = ""
+
+# PROJECT 3
+    [[params.projects.items]]
+    title = "Computer Vision project"
+    content = "Currently private."
+    image = "/images/projects/pic.png"
+    badges = [ ]
+
+      [params.projects.items.featured]
+      name = "--"
+      link = ""
+
+      #[[params.projects.items.links]]
+      #icon = "fab fa-github"
+      #url = ""
+
+
+
+    [[params.projects.items]]
+    title = "Project Managment System - Zenhub & GitHub"
+    content = "A project management system integrated with GitHub repositories to streamline workflow and enhance team collaboration using Zenhub and Github Project."
+    image = "/images/projects/zen.png"
+    badges = [ "Github", "Scrum", "Agile","Zenhub"]
+      [params.projects.items.featured]
+      name = "Demo"
+      link = "https://app.zenhub.com/workspaces/personal-projects-6916b655b33682000f168634/board"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/users/soneeee22000/projects/1"
+      
+
+
+# PROJECT 2
+    [[params.projects.items]]
+    title = "My Snake ID App"
+    content = "A Basic iOS application being built that helps to identify venomous and non-venomous snakes in Myanmar using Swift and Storyboard in Xcode."
+    image = "/images/projects/snakeland.png"
+    badges = [ "Swift","Story board","Xcode" ]
+
+      [params.projects.items.featured]
+      name = "Demo"
+      link = ""
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = ""
+
+  # PROJECT 3
+    [[params.projects.items]]
+    title = "Diabete classification using Raman spectrums"
+    content = "Using scikit learn and classic ML tool to classify the patient, this is one of the last project we did in AI class at Asian Institute of Technology with my teammate Ati."
+    image = "/images/projects/ramanR.png"
+    badges = [ "Python","sklearn" ]
+
+      [params.projects.items.featured]
+      name = "PP"
+      link = "https://github.com/AtiChetsurakul/DataScienceAndMLProjects/blob/main/Diabete_detection_withRamanSpec/CP%20presentation%20.pdf"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/AtiChetsurakul/DataScienceAndMLProjects/blob/main/Diabete_detection_withRamanSpec"
+
+  # PROJECT 7
+    [[params.projects.items]]
+    title = "Ecoforecaster - Harness the power of AI to forecast your energy consumption, reduce costs, and build a sustainable smart home."
+    content = "A web application intregrated with interactive dasboard for energy consumption analysis in France for a single household and how to reduce it by providing recommendation with AI."
+    image = "/images/projects/jouleof.png"
+    badges = ["Next.js","Python","Javascript"]
+
+      [params.projects.items.featured]
+      name = "Demo"
+      link = "https://ai-energy-theta.vercel.app/"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/soneeee22000/AI_Energy_Main_App"
+
+  # PROJECT 8
+    [[params.projects.items]]
+    title = "Secret NLP project"
+    content = "To be anouce"
+    image = "/images/projects/pic.png"
+    badges = [ "--","--" ]
+
+      [params.projects.items.featured]
+      name = "--"
+      link = ""
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = ""
+
+  # PROJECT 9
+    [[params.projects.items]]
+    title = "Secret CV project"
+    content = "TO be anouce"
+    image = "/images/projects/pic.png"
+    badges = [ "--","--" ]
+
+      [params.projects.items.featured]
+      name = "--"
+      link = ""
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = ""
+
+
+# Contact
+  [params.contact]
+  enable = true
+  content = "If you interest, please contact me."
+  email = "pyaesonekyaw101010@gmail.com"
+  btnName = "email"
+
+
+# About this site
+
+
+[params.footer.socialNetworks]
+github = "https://github.com/soneeee22000"
+linkedin = "https://www.linkedin.com/in/pyae-sone-kyaw-80386721b/"
+
+
+  [params.listPages]
+  disableFeaturedImage = false
+
+[params.singlePages.readTime]
+enable = true
+content = "min read"
+
+[params.singlePages.scrollprogress]
+enable = true
+
+  [params.terms]
+  read = "Read"
+  toc = "Table Of Contents"
+  copyright = "All rights reserved"
+  pageNotFound = "Page not found"
+  emailText = "Check out this site"
+
+#  [params.datesFormat]
+#  article = "Jan 2, 2006"
+#  articleList = "Jan 2, 2006"
+#  articleRecent = "Jan 2, 2006"
+
