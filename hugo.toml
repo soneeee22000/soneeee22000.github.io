@@ -58,7 +58,7 @@ animate = true
   intro = 'မင်္ဂလာပါ | Bonjour | สวัสดี | Hello'
   #intro = "Hi, my name is"
   title = "I am Pyae Sone Kyaw."
-  subtitle = "It's ok,You can call me \"Seon\"  Data Scientist | AI Engineer | AI Researcher"
+  subtitle = "But, You can call me \"Seon\" Data Scientist | AI Engineer | AI Researcher"
   content = """ I am a Dual Master's Degree Graduate in Data Science and Artificial Intelligence from top univerisites across Asia and Europe. I have a strong foundation in machine learning, deep learning, and data analysis, with hands-on experience in various projects and research work. I am passionate about leveraging data to drive insights and solve complex problems. """
   image = "/images/IMG_7449.JPG"
 
