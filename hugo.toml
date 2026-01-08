@@ -116,6 +116,7 @@ url = "https://www.linkedin.com/in/pyae-sone-kyaw-80386721b/"
     date = "Dec 2025 - Present"
     content = "Work Experience Summary: I am currently working as a Founding AI Engineer at [Siloett.AI](https://siloett.ai/lander), where I am building AI-powered CreativeAI solutions for the company's core product: Narrative OS.Our company is a part of [Station F](https://stationf.co/programs/in-house), the world's largest startup campus located in Paris, France. In my role, I am responsible for designing and implementing AI models and algorithms that drive the company's innovative solutions to real-world use-cases in the Creative World . I am collaborating closely with the founder to develop cutting-edge CreativeAI applications that leverage the latest advancements in machine learning and artificial intelligence. This experience has allowed me to further hone my skills in AI development and contribute to the growth of a promising startup in the tech industry."
 
+
     [[params.experience.items]]
     job = "Data Scientist/Cloud Engineer"
     company = "Floware (X École Polytechnique Incubator)"
