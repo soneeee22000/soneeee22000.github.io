@@ -103,16 +103,6 @@ header .navbar.animate {
     opacity: 0.5;
 }
 
-/* nickname styling inside hero subtitle */
-#hero .hero-subtitle .nick {
-    font-style: italic;
-    font-size: 0.85em;
-    color: rgba(0,0,0,0.65);
-    display: block;
-    margin-bottom: .25rem;
-    font-family: 'Segoe UI', 'Segoe UI Historic', 'Segoe Script', cursive;
-}
-
 #hero p {
     margin: 20px 0px 0px;
     max-width: 640px;
@@ -428,22 +418,6 @@ header .navbar.animate {
 #education .card .card-body {
     border-radius: 1.5rem;
     padding: 2rem;
-}
-
-/* Normalize education text for consistent appearance */
-#education .card .card-body .education-content,
-#education .card .card-body .education-content p {
-    font-size: 1rem; /* consistent base size */
-    line-height: 1.6rem;
-    color: var(--text-color) !important;
-    margin: 0 0 0.75rem 0;
-}
-
-/* Smaller meta text (date, GPA) */
-#education .card .card-body .education-meta {
-    font-size: 0.9rem;
-    opacity: 0.8;
-    margin-bottom: 0.75rem;
 }
 
 @media all and (max-width:768px) {

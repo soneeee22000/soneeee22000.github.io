@@ -1,6 +1,6 @@
 baseURL = 'https://soneeee22000.github.io/'
 languageCode = "en-us"
-title = "Seon Page"
+title = "Seon's Page"
 theme = "hugoProfileReforge"
 [pagination]
 pagerSize = 3
@@ -29,7 +29,7 @@ unsafe = true
 
 [params]
 title = "Seon Page"
-description = "Text about my cool site"
+description = "Welcome to my personal portfolio website!"
 favicon = "/images/fav.png"
 useBootstrapCDN = false
 animate = true
@@ -58,8 +58,8 @@ animate = true
   intro = 'မင်္ဂလာပါ | Bonjour | สวัสดี | Hello'
   #intro = "Hi, my name is"
   title = "I am Pyae Sone Kyaw."
-  subtitle = "No Worries. Call me \"Seon\" Data Scientist | AI Engineer | AI Researcher"
-  content = """ I am a Dual Master's Degree Graduate in Data Science and Artificial Intelligence from top univerisites across Asia and Europe. I have a strong foundation in machine learning, deep learning, and data analysis, with hands-on experience in various projects and research work. I am passionate about leveraging data to drive insights and solve complex problems. """
+  subtitle = "No Worries. Call me \"Seon\" Data Scientist | AI Engineer"
+  content = """ I am a Dual Master's Degree Graduate in Data Science and Artificial Intelligence from top univerisites across Asia and Europe. I have a strong foundation in machine learning, deep learning, and data analysis, with hands-on experience in various projects and research work. I am passionate about leveraging data to drive insights and solve complex problems, mainly in CreativeAI and AI4SG domains. """
   image = "/images/IMG_7449.JPG"
 
     [params.hero.bottomImage]
@@ -110,20 +110,25 @@ url = "https://www.linkedin.com/in/pyae-sone-kyaw-80386721b/"
   enable = true
 
     [[params.experience.items]]
+    job = "Founding AI Engineer"
+    company = "Siloett.ai (Station F Incubator)"
+    companyUrl = "https://siloett.ai/lander"
+    date = "Dec 2025 - Present"
+    content = "Work Experience Summary: I am currently working as a Founding AI Engineer at [Siloett.AI](https://siloett.ai/lander), where I am building AI-powered CreativeAI solutions for the company's core product: Narrative OS.Our company is a part of [Station F](https://stationf.co/programs/in-house), the world's largest startup campus located in Paris, France. In my role, I am responsible for designing and implementing AI models and algorithms that drive the company's innovative solutions to real-world use-cases in the Creative World . I am collaborating closely with the founder to develop cutting-edge CreativeAI applications that leverage the latest advancements in machine learning and artificial intelligence. This experience has allowed me to further hone my skills in AI development and contribute to the growth of a promising startup in the tech industry."
+
+    [[params.experience.items]]
     job = "Data Scientist/Cloud Engineer"
-    company = "Floware X École Polytechnique Incubator"
+    company = "Floware (X École Polytechnique Incubator)"
     companyUrl = "https://www.polytechnique.edu/novationcenter/incubateur"
     date = "Jul 2024 - Jun 2025"
     content = "Work Experience Summary: I completed a 6 month internship at **Floware SAS**, a French deeptech startup specializing in urban mobility analysis, where I designed and implemented a **cloud-based batch data processing pipeline** using Microsoft Azure Batch and Docker.The project automated workflows for **Computer Vision** and **Bluetooth sensor data**, enabling scalable mobility insights and client‑ready analytics. While I cannot share the proprietary code, my [Internship Report (PDF)](https://github.com/soneeee22000/My_Masters_Internship_Report_Floware) and the [Floware SAS website](https://floware.fr) provide detailed documentation of the work and its impact.This experience also marked the completion of my **Dual Master’s in Data Science, AI & Network Intelligence**. I also want to share the exam project that got me this job in the first place for your reference: [Sensor Data Analysis Interview Project.](https://github.com/soneeee22000/Deep_Tech_Smart_City_Mobility_Interview_Coding_Project_Exam)"
 
-
-
-    [[params.experience.items]]
-    job = "Research Assistant"
-    company = "Data Intelligence and Communication Engineering Lab"
-    companyUrl = "https://dice.wp.telecom-sudparis.eu/"
-    date = "Aug 2023  - Jul 2024"
-    content = "At the **Data Intelligence and Communication Engineering (DICE) Lab**, I developed a complete **English–Myanmar machine translation pipeline** built on a 10K gold‑labeled Wikihow parallel corpus that I manually created and curated. My work covered **dataset construction, model training, evaluation design, and deployment**, including experiments with multilingual MT backbones, reproducible training scripts, and optimized inference for low‑resource languages.I am currently extending this project by building a **public translation API** and a **Chrome extension** that enables real‑time English–Myanmar translation directly on Wikihow webpage, enabling Burmese readers with accurate how-to-instructions articles translation. This research contributes to the lab’s mission of advancing intelligent communication systems. More details about the lab can be found at the [DICE Lab website](https://dice.wp.telecom-sudparis.eu/team/)."
+    #[[params.experience.items]]
+    #job = "Research Assistant"
+    #company = "Data Intelligence and Communication Engineering Lab"
+    #companyUrl = "https://dice.wp.telecom-sudparis.eu/"
+    #date = "Aug 2023  - Jul 2024"
+    #content = "At the **Data Intelligence and Communication Engineering (DICE) Lab**, I developed a complete **English–Myanmar machine translation pipeline** built on a 10K gold‑labeled Wikihow parallel corpus that I manually created and curated. My work covered **dataset construction, model training, evaluation design, and deployment**, including experiments with multilingual MT backbones, reproducible training scripts, and optimized inference for low‑resource languages.I am currently extending this project by building a **public translation API** and a **Chrome extension** that enables real‑time English–Myanmar translation directly on Wikihow webpage, enabling Burmese readers with accurate how-to-instructions articles translation. This research contributes to the lab’s mission of advancing intelligent communication systems. More details about the lab can be found at the [DICE Lab website](https://dice.wp.telecom-sudparis.eu/team/)."
 
 
   [params.education]
@@ -231,12 +236,17 @@ I plan to finish this degree when the situation in Myanmar gets better.
     [[params.achievements.items]]
     title = "Python for Everybody Specialization"
     content = "I solved all coding & theoretical problems with optimal solution for this specialization by Dr. Charles Severance on Coursera."
-    url = "https://coursera.org/share/a9cc4447ca3d46ca7785cd2e7f655476"
+    url = "https://www.coursera.org/account/accomplishments/specialization/5UN5XA31T3XY"
 
     [[params.achievements.items]]
     title = "Agile Development and Scrum"
     content = "Completed Agile Development and Scrum course- a part of DevOps Specialization by IBM on Coursera."
     url = "https://coursera.org/share/8358fd39d8b8896c54f93d33f5372843"
+
+    [[params.achievements.items]]
+    title = "Meta Full Stack Developer:Front-End & Back-End from Scratch Specialization"
+    content = "I solved all coding & theoretical problems with optimal solution for this specialization by Meta on Coursera."
+    url = ""
 
 # Project
 
@@ -260,35 +270,18 @@ I plan to finish this degree when the situation in Myanmar gets better.
 
   # PROJECT 2
     [[params.projects.items]]
-    title = "Mario Bros on the Rainbow- Deep Reinforcement Learning for Super Mario"
-    content = "Using RAINBOW, a varient of Deep Q-learning, to train an agent for super mario playing - currently building the environment and training the model."
-    image = "/images/projects/rainbros2.gif"
-    badges = [ "reinforcement learning","pytorch","gym" ]
+    title = "Project Star Trek"
+    content = "A mini narrative operating system for Star Trek: The Next Generation (TNG). This full-stack application enables ingesting TNG episode data, generating episode blueprints based on creative briefs, validating generated content, and performing vector-based search and retrieval for narrative elements."
+    image = "/images/projects/giphy.gif"
+    badges = [ "SQLAlchemy","FastAPI","Docker","React", "PostgreSQL + pgvector", "Typescript" ]
 
       [params.projects.items.featured]
       name = "Read"
-      link = "https://github.com/Curt-Park/rainbow-is-all-you-need"
+      link = "https://github.com/soneeee22000/Project-Star-Trek/blob/main/README.md"
 
       [[params.projects.items.links]]
       icon = "fab fa-github"
-      url = ""
-
-# PROJECT 3
-    [[params.projects.items]]
-    title = "Computer Vision project"
-    content = "Currently private."
-    image = "/images/projects/pic.png"
-    badges = [ ]
-
-      [params.projects.items.featured]
-      name = "--"
-      link = ""
-
-      #[[params.projects.items.links]]
-      #icon = "fab fa-github"
-      #url = ""
-
-
+      url = "https://github.com/soneeee22000/Project-Star-Trek"
 
     [[params.projects.items]]
     title = "Project Managment System - Zenhub & GitHub"
@@ -310,15 +303,15 @@ I plan to finish this degree when the situation in Myanmar gets better.
     title = "My Snake ID App"
     content = "A Basic iOS application being built that helps to identify venomous and non-venomous snakes in Myanmar using Swift and Storyboard in Xcode."
     image = "/images/projects/snakeland.png"
-    badges = [ "Swift","Story board","Xcode" ]
+    badges = [ "Python","Streamlit","JupyterNotebook"]
 
       [params.projects.items.featured]
       name = "Demo"
-      link = ""
+      link = "https://mysnakensafety.streamlit.app/"
 
       [[params.projects.items.links]]
       icon = "fab fa-github"
-      url = ""
+      url = "https://github.com/soneeee22000/my_snake_id"
 
   # PROJECT 3
     [[params.projects.items]]
@@ -350,41 +343,14 @@ I plan to finish this degree when the situation in Myanmar gets better.
       icon = "fab fa-github"
       url = "https://github.com/soneeee22000/AI_Energy_Main_App"
 
-  # PROJECT 8
-    [[params.projects.items]]
-    title = "Secret NLP project"
-    content = "To be anouce"
-    image = "/images/projects/pic.png"
-    badges = [ "--","--" ]
 
-      [params.projects.items.featured]
-      name = "--"
-      link = ""
 
-      [[params.projects.items.links]]
-      icon = "fab fa-github"
-      url = ""
-
-  # PROJECT 9
-    [[params.projects.items]]
-    title = "Secret CV project"
-    content = "TO be anouce"
-    image = "/images/projects/pic.png"
-    badges = [ "--","--" ]
-
-      [params.projects.items.featured]
-      name = "--"
-      link = ""
-
-      [[params.projects.items.links]]
-      icon = "fab fa-github"
-      url = ""
 
 
 # Contact
   [params.contact]
   enable = true
-  content = "If you interest, please contact me."
+  content = "If you are interested, please contact me."
   email = "pyaesonekyaw101010@gmail.com"
   btnName = "email"
 
