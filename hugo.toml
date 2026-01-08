@@ -108,7 +108,7 @@ url = "https://www.linkedin.com/in/pyae-sone-kyaw-80386721b/"
 
   [params.experience]
   enable = true
-  
+
     [[params.experience.items]]
     job = "Founding AI Engineer"
     company = "Siloett.ai (Station F Incubator)"
