@@ -108,7 +108,7 @@ url = "https://www.linkedin.com/in/pyae-sone-kyaw-80386721b/"
 
   [params.experience]
   enable = true
-
+  
     [[params.experience.items]]
     job = "Founding AI Engineer"
     company = "Siloett.ai (Station F Incubator)"
@@ -121,15 +121,7 @@ url = "https://www.linkedin.com/in/pyae-sone-kyaw-80386721b/"
     company = "Floware (X École Polytechnique Incubator)"
     companyUrl = "https://www.polytechnique.edu/novationcenter/incubateur"
     date = "Jul 2024 - Jun 2025"
-    content = "Work Experience Summary: I completed a 6 month internship at **Floware SAS**, a French deeptech startup specializing in urban mobility analysis, where I designed and implemented a **cloud-based batch data processing pipeline** using Microsoft Azure Batch and Docker.The project automated workflows for **Computer Vision** and **Bluetooth sensor data**, enabling scalable mobility insights and client‑ready analytics. While I cannot share the proprietary code, my [Internship Report (PDF)](https://github.com/soneeee22000/My_Masters_Internship_Report_Floware) and the [Floware SAS website](https://floware.fr) provide detailed documentation of the work and its impact.This experience also marked the completion of my **Dual Master’s in Data Science, AI & Network Intelligence**. I also want to share the exam project that got me this job in the first place for your reference: [Sensor Data Analysis Interview Project.](https://github.com/soneeee22000/Deep_Tech_Smart_City_Mobility_Interview_Coding_Project_Exam)"
-
-    #[[params.experience.items]]
-    #job = "Research Assistant"
-    #company = "Data Intelligence and Communication Engineering Lab"
-    #companyUrl = "https://dice.wp.telecom-sudparis.eu/"
-    #date = "Aug 2023  - Jul 2024"
-    #content = "At the **Data Intelligence and Communication Engineering (DICE) Lab**, I developed a complete **English–Myanmar machine translation pipeline** built on a 10K gold‑labeled Wikihow parallel corpus that I manually created and curated. My work covered **dataset construction, model training, evaluation design, and deployment**, including experiments with multilingual MT backbones, reproducible training scripts, and optimized inference for low‑resource languages.I am currently extending this project by building a **public translation API** and a **Chrome extension** that enables real‑time English–Myanmar translation directly on Wikihow webpage, enabling Burmese readers with accurate how-to-instructions articles translation. This research contributes to the lab’s mission of advancing intelligent communication systems. More details about the lab can be found at the [DICE Lab website](https://dice.wp.telecom-sudparis.eu/team/)."
-
+    content = "Work Experience Summary: I completed a 6 month internship at **Floware SAS**, a French deeptech startup specializing in urban mobility analysis, where I designed and implemented a **cloud-based batch data processing pipeline** using Microsoft Azure Batch and Docker.The project automated workflows for **Computer Vision** and **Bluetooth sensor data**, enabling scalable mobility insights and client‑ready analytics. While I cannot share the proprietary code, my [Internship Report (PDF)](https://github.com/soneeee22000/My_Masters_Internship_Report_Floware) and the [Floware SAS website](https://floware.fr) provide detailed documentation of the work and its impact.This experience also marked the completion of my **Dual Master’s in Data Science, AI & Network Intelligence**. I also want to share the exam project that got me this job in the first place for your reference: [Sensor Data Analysis Interview Project.](https://github.com/soneeee22000/Deep_Tech_Smart_City_Mobility_Interview_Coding_Project_Exam)."
 
   [params.education]
   enable = true
