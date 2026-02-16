@@ -29,7 +29,7 @@ unsafe = true
 
 [params]
 title = "Seon Page"
-description = "Welcome to my personal portfolio website!"
+description = "Pyae Sone Kyaw (Seon) — Founding AI Engineer specializing in CreativeAI, NLP, and full-stack AI systems."
 favicon = "/images/fav.png"
 useBootstrapCDN = false
 animate = true
@@ -56,21 +56,20 @@ animate = true
   [params.hero]
   enable = true
   intro = 'မင်္ဂလာပါ | Bonjour | สวัสดี | Hello'
-  #intro = "Hi, my name is"
   title = "I am Pyae Sone Kyaw."
-  subtitle = "No Worries. Call me \"Seon\" Data Scientist | AI Engineer"
-  content = """ I am a Dual Master's Degree Graduate in Data Science and Artificial Intelligence from top univerisites across Asia and Europe. I have a strong foundation in machine learning, deep learning, and data analysis, with hands-on experience in various projects and research work. I am passionate about leveraging data to drive insights and solve complex problems, mainly in CreativeAI and AI4SG domains. """
+  subtitle = """Call me "Seon" — Data Scientist | AI Engineer"""
+  content = """I am a Dual Master's Degree Graduate in Data Science and Artificial Intelligence from top universities across Asia and Europe. I have a strong foundation in machine learning, deep learning, and data analysis, with hands-on experience in various projects and research. I am passionate about leveraging data to drive insights and solve complex problems, mainly in CreativeAI and AI4SG domains."""
   image = "/images/IMG_7449.JPG"
 
     [params.hero.bottomImage]
     enable = true
 
-#    [params.hero.button]
- #   enable = true
-  #  name = "Github"
-   # url = "https://github.com/soneeee22000"
-  #  download = false
-  #  newPage = true
+    [params.hero.button]
+    enable = true
+    name = "Resume"
+    url = "/files/resume.pdf"
+    download = true
+    newPage = false
 
 [[params.hero.socialLinks.fontAwesomeIcons]]
 icon = "fab fa-github"
@@ -89,21 +88,19 @@ url = "https://www.linkedin.com/in/pyae-sone-kyaw-80386721b/"
   title = "About Me"
   image = "/images/seon.jpg"
   content = """
-
-  I am a Data Scientist and AI Researcher with a dual Master's background in Data Science, Artificial Intelligence, and Social Sciences. 
-  My work spans deep learning, NLP, computer vision, and agentic AI systems, with a strong interest in building impactful tools for Burmese and global communities. 
-  I have experience designing end-to-end cloud data pipelines, developing evaluation-driven AI experiments, and contributing to smart city analytics as the sole data scientist in a fast-paced startup environment. 
-  Beyond technical depth, I bring strengths in linguistics, research design, and human-centric problem solving. 
-  I primarily code in Python (PyTorch, scikit-learn, FastAPI), and I am experienced with Azure, Docker, Git, microservice architectures, and full-stack prototyping. 
-  Ultimately, I aspire to build socially impactful AI products and future startups under my personal brand "Ahkkara".
-
+I am a Data Scientist and AI Researcher with a dual Master's background in Data Science, Artificial Intelligence, and Social Sciences.
+My work spans deep learning, NLP, computer vision, and agentic AI systems, with a strong interest in building impactful tools for Burmese and global communities.
+I have experience designing end-to-end cloud data pipelines, developing evaluation-driven AI experiments, and contributing to smart city analytics as the sole data scientist in a fast-paced startup environment.
+Beyond technical depth, I bring strengths in linguistics, research design, and human-centric problem solving.
+I primarily code in Python (PyTorch, scikit-learn, FastAPI), and I am experienced with Azure, Docker, Git, microservice architectures, and full-stack prototyping.
+Currently, I am building AI-powered CreativeAI solutions at [Siloett.AI](https://siloett.ai/lander) (Station F, Paris) as a Founding AI Engineer.
 """
 
     [params.about.skills]
     enable = true
     title = "Here are a few technologies I've been working with recently:"
     mainitem = "https://www.vectorlogo.zone/logos/docker/docker-official.svg"
-    items = ["https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg","https://www.vectorlogo.zone/logos/python/python-ar21.svg","https://img.icons8.com/?size=100&id=ewGOClUtmFX4&format=png&color=000000","https://www.vectorlogo.zone/logos/grpcio/grpcio-ar21.svg","https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg","https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg","https://www.vectorlogo.zone/logos/neo4j/neo4j-ar21.svg","https://plotly.com/chart-studio-help/images/logo-light.svg","https://www.vectorlogo.zone/logos/gitlab/gitlab-ar21.svg","https://www.vectorlogo.zone/logos/github/github-ar21.svg"]
+    items = ["https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg","https://www.vectorlogo.zone/logos/python/python-ar21.svg","https://img.icons8.com/?size=100&id=ewGOClUtmFX4&format=png&color=000000","https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg","https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-ar21.svg","https://www.vectorlogo.zone/logos/postgresql/postgresql-ar21.svg","https://www.vectorlogo.zone/logos/neo4j/neo4j-ar21.svg","https://www.vectorlogo.zone/logos/gitlab/gitlab-ar21.svg","https://www.vectorlogo.zone/logos/github/github-ar21.svg","https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg"]
 
 
   [params.experience]
@@ -114,7 +111,15 @@ url = "https://www.linkedin.com/in/pyae-sone-kyaw-80386721b/"
     company = "Siloett-ai Station F Incubator"
     companyUrl = "https://siloett.ai/lander"
     date = "Dec 2025 - Present"
-    content = "Work Experience Summary: I am currently working as a Founding AI Engineer at [Siloett.AI](https://siloett.ai/lander), where I am building AI-powered CreativeAI solutions for the company's core product: Narrative OS.Our company is a part of [Station F](https://stationf.co/programs/in-house), the world's largest startup campus located in Paris, France. In my role, I am responsible for designing and implementing AI models and algorithms that drive the company's innovative solutions to real-world use-cases in the Creative World . I am collaborating closely with the founder to develop cutting-edge CreativeAI applications that leverage the latest advancements in machine learning and artificial intelligence. This experience has allowed me to further hone my skills in AI development and contribute to the growth of a promising startup in the tech industry."
+    content = """
+I am currently working as a Founding AI Engineer at [Siloett.AI](https://siloett.ai/lander), building AI-powered CreativeAI solutions for the company's core product: Narrative OS.
+
+Our company is part of [Station F](https://stationf.co/programs/in-house), the world's largest startup campus in Paris, France.
+
+- Designing and implementing AI models and algorithms that drive innovative CreativeAI solutions
+- Collaborating closely with the founder to develop cutting-edge applications leveraging the latest advancements in ML and AI
+- Building end-to-end RAG pipelines and agentic AI systems for real-world creative industry use-cases
+"""
 
 
 
@@ -123,7 +128,15 @@ url = "https://www.linkedin.com/in/pyae-sone-kyaw-80386721b/"
     company = "Floware X École Polytechnique Incubator"
     companyUrl = "https://www.polytechnique.edu/novationcenter/incubateur"
     date = "Jul 2024 - Jun 2025"
-    content = "Work Experience Summary: I completed a 6 month internship at **Floware SAS**, a French deeptech startup specializing in urban mobility analysis, where I designed and implemented a **cloud-based batch data processing pipeline** using Microsoft Azure Batch and Docker.The project automated workflows for **Computer Vision** and **Bluetooth sensor data**, enabling scalable mobility insights and client‑ready analytics. While I cannot share the proprietary code, my [Internship Report (PDF)](https://github.com/soneeee22000/My_Masters_Internship_Report_Floware) and the [Floware SAS website](https://floware.fr) provide detailed documentation of the work and its impact.This experience also marked the completion of my **Dual Master’s in Data Science, AI & Network Intelligence**. I also want to share the exam project that got me this job in the first place for your reference: [Sensor Data Analysis Interview Project.](https://github.com/soneeee22000/Deep_Tech_Smart_City_Mobility_Interview_Coding_Project_Exam)."
+    content = """
+Completed a 6-month internship at **Floware SAS**, a French deeptech startup specializing in urban mobility analysis.
+
+- Designed and implemented a **cloud-based batch data processing pipeline** using Microsoft Azure Batch and Docker
+- Automated workflows for **Computer Vision** and **Bluetooth sensor data**, enabling scalable mobility insights
+- Delivered client-ready analytics dashboards for smart city stakeholders
+
+Resources: [Internship Report (PDF)](https://github.com/soneeee22000/My_Masters_Internship_Report_Floware) | [Floware SAS](https://floware.fr) | [Interview Coding Project](https://github.com/soneeee22000/Deep_Tech_Smart_City_Mobility_Interview_Coding_Project_Exam)
+"""
 
 
   [params.education]
@@ -132,19 +145,13 @@ url = "https://www.linkedin.com/in/pyae-sone-kyaw-80386721b/"
 
 # 1st School
     [[params.education.items]]
-    title = "Master of Science in Data Science and Network Intelligence "
+    title = "Master of Science in Data Science and Network Intelligence"
     date = "2023 - 2024"
     GPA = "15.15/20"
     content = """
-I believe that pursuing this degree in Paris, France has been a transformative experience for me.
-It has equipped me with advanced knowledge and skills in data science, machine learning, and network intelligence.
-Especially since I get to study in `one of the top engineering school in France`, Telecom SudParis-IP Paris, which is renowned for its excellence in technology and innovation.
-Also, I am grateful for the opportunity to immerse myself in French culture and language, which has broadened my perspective and enriched my personal growth.
-My employment at a start-up in the incubator program of Ecole Polytechnique has also given me practical insights into entrepreneurship and innovation.
-I get to **apply theoretical concepts learned in class to real-world scenarios**, enhancing my problem-solving abilities and adaptability in dynamic environments.
+Studied at one of the top engineering schools in France, renowned for excellence in technology and innovation. Applied theoretical concepts to real-world scenarios through employment at a startup in the École Polytechnique incubator program. The school ranks 46th worldwide in QS World University Rankings 2025.
 
-It's always good to learn that Our School is advancing in University Rankings - 46th worldwide in QS World University Rankings 2025. Check it out [here](https://ait.ac.th/program/dual-degree-masters-program-with-telecom-sud-paris/)
-
+Check out the [Dual Degree Program](https://ait.ac.th/program/dual-degree-masters-program-with-telecom-sud-paris/).
     """
       [params.education.items.school]
       name = "Telecom SudParis"
@@ -157,15 +164,9 @@ It's always good to learn that Our School is advancing in University Rankings - 
     date = "2022 - 2024"
     GPA = "3.17 / 4.0"
     content = """
-This program provided me with a strong foundation in data science and artificial intelligence.
-I started gaining experience designing end-to-end data pipelines, developing machine learning models, and conducting AI research here.
-I also grew passionate about leveraging data to **drive insights and solve complex problems.**
-I am glad to have pursued a MSc. at AIT, since not only because of its intense curriculum,but also it exposed me to diverse international perspectives through its multicultural environment for the first time in my life.
-Finally, I am grateful that the institute provided me with a great opportunity to study in 
-`dual Masters' degree program with Telecom SudParis`.
+Built a strong foundation in data science and AI through an intense curriculum. Gained experience designing end-to-end data pipelines, developing ML models, and conducting AI research. The multicultural environment at AIT provided diverse international perspectives, and the institute's dual degree partnership with Telecom SudParis enabled study in both Asia and Europe.
 
-You can check out the [Program Brochure of AIT here](https://ait.ac.th/program/dual-degree-masters-program-with-telecom-sud-paris/) or [that of TSP here.](https://ait.ac.th/program/dual-degree-masters-program-with-telecom-sud-paris/)
-
+Check out the [Program Brochure](https://ait.ac.th/program/dual-degree-masters-program-with-telecom-sud-paris/).
               """
       [params.education.items.school]
       name = "Asian Institute of Technology"
@@ -177,15 +178,7 @@ You can check out the [Program Brochure of AIT here](https://ait.ac.th/program/d
     date = "2016 - 2020"
     GPA = "3.67/4.0"
     content = """
-I have a great time in MIT to learn about Social Science.
-In fact, MIT was the first university who accepted me after I took the entrance exam and passed it, immediately out of high school.
-It opened my mind to see various social issues from different perspectives.
-I finally managed to **find beauty in diversity**.
-As I learned to appreciate different cultures and beliefs, I also developed my critical thinking and communication skills.
-I learn about how society work and how to conduct research in social science field.
-It was fun to discuss with my classmates and lecturers about various social issues and think critically about possible solutions.
-It was also interesting to learn about different research methods and how to apply them in real-world contexts.
-Maybe I `enjoyed it so much that I ended up topping the class` with highest GPA in my batch. hahaxx
+Developed critical thinking and research skills through the study of social sciences. Gained the ability to analyze social issues from multiple perspectives and apply diverse research methods. Graduated top of the class with the highest GPA in the batch.
     """
 
       [params.education.items.school]
@@ -198,15 +191,7 @@ Maybe I `enjoyed it so much that I ended up topping the class` with highest GPA 
     date = "2016 - 2020 (Interrupted due to COVID and Military Coup)"
     GPA = "4.09/5.0(Completed Third Year CGPA)"
     content = """
-    
-I have always been fascinated by the intricacies of language and its power to shape our understanding of the world.
-**Poetry** being a particular passion of mine, I decided to pursue a degree that would allow me to explore this interest further.
-Through my studies, I explored various literary works and linguistic theories,honing my analytical and critical thinking skills.
-This academic journey enriched my appreciation for language and the science behind it.
-It also equipped me with valuable research and communication skills that continue to benefit me in both personal and professional contexts.
-Plus, `Yangon University is the oldest and most prestigious university in Myanmar`, and I am proud to have been a part of its academic community.
-It was one of the most memorable experience that has shaped who I am today. 
-I plan to finish this degree when the situation in Myanmar gets better.
+Explored literary works and linguistic theories at Myanmar's oldest and most prestigious university. Developed strong analytical, research, and communication skills through the study of language and literature. Plan to complete this degree when the situation in Myanmar improves.
     """
 
       [params.education.items.school]
@@ -225,50 +210,35 @@ I plan to finish this degree when the situation in Myanmar gets better.
 
     [[params.achievements.items]]
     title = "Machine Learning Specialization"
-    content = "I solved all coding & theoretical problems with optimal solution for this specialization by Andrew Ng `Standford-DeepLearning.AI` on Coursera."
+    content = "Completed all coding and theoretical problems with optimal solutions for this specialization by Andrew Ng (Stanford/DeepLearning.AI) on Coursera."
     url = "https://coursera.org/share/946625f9bdea354d2f8da22c15c66ee4"
 
     [[params.achievements.items]]
     title = "Python for Everybody Specialization"
-    content = "I solved all coding & theoretical problems with optimal solution for this specialization by Dr. Charles Severance on Coursera."
+    content = "Completed all coding and theoretical problems with optimal solutions for this specialization by Dr. Charles Severance on Coursera."
     url = "https://www.coursera.org/account/accomplishments/specialization/5UN5XA31T3XY"
 
     [[params.achievements.items]]
     title = "Agile Development and Scrum"
-    content = "Completed Agile Development and Scrum course- a part of DevOps Specialization by IBM on Coursera."
+    content = "Completed Agile Development and Scrum course, part of the DevOps Specialization by IBM on Coursera."
     url = "https://coursera.org/share/8358fd39d8b8896c54f93d33f5372843"
 
     [[params.achievements.items]]
-    title = "Meta Full Stack Developer:Front-End & Back-End from Scratch Specialization"
-    content = "I solved all coding & theoretical problems with optimal solution for this specialization by Meta on Coursera."
-    url = ""
+    title = "Meta Full Stack Developer Specialization"
+    content = "Completed Front-End and Back-End development from scratch, covering React, Django, and API design by Meta on Coursera."
+    url = "https://coursera.org/share/8358fd39d8b8896c54f93d33f5372843"
 
 # Project
 
   [params.projects]
   enable = true
 
-    [[params.projects.items]]
-    title = "PsychHealth AI with RAG"
-    content = "an Ongoing Project : A NLP application that provides mental health support using Retrieval-Augmented Generation (RAG) techniques that combine pre-trained language models with external knowledge sources."
-    image = "/images/projects/nlpapp.png"
-    badges = [ "NLP","pytorch","Hugging Face" ]
-
-      [params.projects.items.featured]
-      name = "Demo"
-      link = "https://psych-ai-rag-mvp.streamlit.app/"
-
-      [[params.projects.items.links]]
-      icon = "fab fa-github"
-      url = "https://github.com/soneeee22000/Psych_ai_with_RAG"
-
-
-  # PROJECT 2
+# PROJECT 1 - Star Trek (strongest, full-stack)
     [[params.projects.items]]
     title = "Project Star Trek"
-    content = "A mini narrative operating system for Star Trek: The Next Generation (TNG). This full-stack application enables ingesting TNG episode data, generating episode blueprints based on creative briefs, validating generated content, and performing vector-based search and retrieval for narrative elements."
+    content = "A mini narrative operating system for Star Trek: The Next Generation (TNG). Full-stack application enabling TNG episode data ingestion, blueprint generation from creative briefs, content validation, and vector-based search and retrieval for narrative elements."
     image = "/images/projects/giphy.gif"
-    badges = [ "SQLAlchemy","FastAPI","Docker","React", "PostgreSQL + pgvector", "Typescript" ]
+    badges = [ "SQLAlchemy","FastAPI","Docker","React", "PostgreSQL + pgvector", "TypeScript" ]
 
       [params.projects.items.featured]
       name = "Read"
@@ -278,57 +248,27 @@ I plan to finish this degree when the situation in Myanmar gets better.
       icon = "fab fa-github"
       url = "https://github.com/soneeee22000/Project-Star-Trek"
 
+# PROJECT 2 - PsychHealth AI
     [[params.projects.items]]
-    title = "Project Managment System - Zenhub & GitHub"
-    content = "A project management system integrated with GitHub repositories to streamline workflow and enhance team collaboration using Zenhub and Github Project."
-    image = "/images/projects/zen.png"
-    badges = [ "Github", "Scrum", "Agile","Zenhub"]
-      [params.projects.items.featured]
-      name = "Demo"
-      link = "https://app.zenhub.com/workspaces/personal-projects-6916b655b33682000f168634/board"
-
-      [[params.projects.items.links]]
-      icon = "fab fa-github"
-      url = "https://github.com/users/soneeee22000/projects/1"
-      
-
-
-# PROJECT 2
-    [[params.projects.items]]
-    title = "My Snake ID App"
-    content = "A Basic iOS application being built that helps to identify venomous and non-venomous snakes in Myanmar using Swift and Storyboard in Xcode."
-    image = "/images/projects/snakeland.png"
-    badges = [ "Python","Streamlit","JupyterNotebook"]
+    title = "PsychHealth AI with RAG"
+    content = "An NLP application that provides mental health support using Retrieval-Augmented Generation (RAG) techniques, combining pre-trained language models with external knowledge sources."
+    image = "/images/projects/nlpapp.png"
+    badges = [ "NLP","PyTorch","Hugging Face" ]
 
       [params.projects.items.featured]
       name = "Demo"
-      link = "https://mysnakensafety.streamlit.app/"
+      link = "https://psych-ai-rag-mvp.streamlit.app/"
 
       [[params.projects.items.links]]
       icon = "fab fa-github"
-      url = "https://github.com/soneeee22000/my_snake_id"
+      url = "https://github.com/soneeee22000/Psych_ai_with_RAG"
 
-  # PROJECT 3
+# PROJECT 3 - Ecoforecaster
     [[params.projects.items]]
-    title = "Diabete classification using Raman spectrums"
-    content = "Using scikit learn and classic ML tool to classify the patient, this is one of the last project we did in AI class at Asian Institute of Technology with my teammate Ati."
-    image = "/images/projects/ramanR.png"
-    badges = [ "Python","sklearn" ]
-
-      [params.projects.items.featured]
-      name = "PP"
-      link = "https://github.com/AtiChetsurakul/DataScienceAndMLProjects/blob/main/Diabete_detection_withRamanSpec/CP%20presentation%20.pdf"
-
-      [[params.projects.items.links]]
-      icon = "fab fa-github"
-      url = "https://github.com/AtiChetsurakul/DataScienceAndMLProjects/blob/main/Diabete_detection_withRamanSpec"
-
-  # PROJECT 7
-    [[params.projects.items]]
-    title = "Ecoforecaster - Harness the power of AI to forecast your energy consumption, reduce costs, and build a sustainable smart home."
-    content = "A web application intregrated with interactive dasboard for energy consumption analysis in France for a single household and how to reduce it by providing recommendation with AI."
+    title = "Ecoforecaster"
+    content = "A web application with interactive dashboard for energy consumption analysis in France, providing AI-powered recommendations to reduce household energy costs and build a sustainable smart home."
     image = "/images/projects/jouleof.png"
-    badges = ["Next.js","Python","Javascript"]
+    badges = ["Next.js","Python","JavaScript"]
 
       [params.projects.items.featured]
       name = "Demo"
@@ -338,8 +278,49 @@ I plan to finish this degree when the situation in Myanmar gets better.
       icon = "fab fa-github"
       url = "https://github.com/soneeee22000/AI_Energy_Main_App"
 
+# PROJECT 4 - Diabetes classification
+    [[params.projects.items]]
+    title = "Diabetes Classification using Raman Spectrums"
+    content = "Using scikit-learn and classic ML tools to classify patients from Raman spectroscopy data. A collaborative project completed during the AI program at Asian Institute of Technology."
+    image = "/images/projects/ramanR.png"
+    badges = [ "Python","scikit-learn" ]
 
+      [params.projects.items.featured]
+      name = "Presentation"
+      link = "https://github.com/AtiChetsurakul/DataScienceAndMLProjects/blob/main/Diabete_detection_withRamanSpec/CP%20presentation%20.pdf"
 
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/AtiChetsurakul/DataScienceAndMLProjects/blob/main/Diabete_detection_withRamanSpec"
+
+# PROJECT 5 - Snake ID
+    [[params.projects.items]]
+    title = "My Snake ID App"
+    content = "An application that helps identify venomous and non-venomous snakes in Myanmar using image classification and a Streamlit interface."
+    image = "/images/projects/snakeland.png"
+    badges = [ "Python","Streamlit","Jupyter Notebook"]
+
+      [params.projects.items.featured]
+      name = "Demo"
+      link = "https://mysnakensafety.streamlit.app/"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/soneeee22000/my_snake_id"
+
+# PROJECT 6 - Project Management
+    [[params.projects.items]]
+    title = "Project Management System - Zenhub & GitHub"
+    content = "A project management system integrated with GitHub repositories to streamline workflow and enhance team collaboration using Zenhub and GitHub Projects."
+    image = "/images/projects/zen.png"
+    badges = [ "GitHub", "Scrum", "Agile","Zenhub"]
+      [params.projects.items.featured]
+      name = "Demo"
+      link = "https://app.zenhub.com/workspaces/personal-projects-6916b655b33682000f168634/board"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/users/soneeee22000/projects/1"
 
 
 # Contact
@@ -379,4 +360,3 @@ enable = true
 #  article = "Jan 2, 2006"
 #  articleList = "Jan 2, 2006"
 #  articleRecent = "Jan 2, 2006"
-
