@@ -240,14 +240,13 @@ Explored literary works and linguistic theories at Myanmar's oldest and most pre
     image = "images/projects/jouleof.png"
     badges = [ "Next.js", "React", "TypeScript", "Supabase" ]
 
-      # TODO: add links once URLs are ready
-      # [params.projects.items.featured]
-      # name = "Demo"
-      # link = "https://vaxevidence-dev.vercel.app/"
+      [params.projects.items.featured]
+      name = "Demo"
+      link = "https://vaxevidence-dev.vercel.app/"
 
-      # [[params.projects.items.links]]
-      # icon = "fab fa-github"
-      # url = "https://github.com/soneeee22000/VaxEvidence-Dev"
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/soneeee22000/VaxEvidence-Dev"
 
 # PROJECT 2 - PsychHealth AI
     [[params.projects.items]]
