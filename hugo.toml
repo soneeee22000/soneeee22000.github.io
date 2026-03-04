@@ -237,17 +237,17 @@ Explored literary works and linguistic theories at Myanmar's oldest and most pre
     [[params.projects.items]]
     title = "VaxEvidence"
     content = "Real-World Evidence platform for vaccine research. Full-stack application for ingesting, analyzing, and visualizing vaccine safety and efficacy data from real-world sources."
-    image = "/images/projects/vaxevidence.png"
+    image = "images/projects/jouleof.png"
     badges = [ "Next.js", "React", "TypeScript", "Supabase" ]
 
       # TODO: add links once URLs are ready
       # [params.projects.items.featured]
       # name = "Demo"
-      # link = ""
+      # link = "https://vaxevidence-dev.vercel.app/"
 
       # [[params.projects.items.links]]
       # icon = "fab fa-github"
-      # url = ""
+      # url = "https://github.com/soneeee22000/VaxEvidence-Dev"
 
 # PROJECT 2 - PsychHealth AI
     [[params.projects.items]]
