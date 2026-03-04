@@ -1,0 +1,99 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build-and-validate:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.115.1
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Build site
+        env:
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        run: hugo --gc --minify
+
+      - name: Check for broken internal links
+        run: |
+          # Find all href/src references in generated HTML and flag any pointing to missing local files
+          errors=0
+          for html_file in $(find public -name '*.html'); do
+            # Extract local href/src paths (skip external URLs, anchors, mailto, tel, javascript)
+            grep -oP '(?:href|src)="(/[^"]*)"' "$html_file" | grep -oP '"/[^"]*"' | tr -d '"' | while read -r path; do
+              # Skip anchor-only, external, and special links
+              [[ "$path" == "#"* ]] && continue
+              [[ "$path" == "//"* ]] && continue
+
+              # Resolve path to public directory
+              local_path="public${path}"
+
+              # Check if file or directory (with index.html) exists
+              if [[ ! -f "$local_path" && ! -f "${local_path}index.html" && ! -f "${local_path}/index.html" ]]; then
+                echo "::warning file=${html_file}::Broken internal link: ${path}"
+                errors=$((errors + 1))
+              fi
+            done
+          done
+          if [[ $errors -gt 0 ]]; then
+            echo "::warning::Found ${errors} potentially broken internal links"
+          fi
+
+      - name: Validate HTML structure
+        run: |
+          # Check that key pages were generated
+          echo "Checking generated pages..."
+          [[ -f public/index.html ]] && echo "  index.html OK" || { echo "::error::Missing index.html"; exit 1; }
+          [[ -f public/404.html ]] && echo "  404.html OK" || echo "::warning::Missing 404.html"
+          [[ -d public/images ]] && echo "  images/ OK" || echo "::warning::Missing images directory"
+          [[ -d public/css ]] && echo "  css/ OK" || { echo "::error::Missing css directory"; exit 1; }
+          [[ -d public/js ]] && echo "  js/ OK" || { echo "::error::Missing js directory"; exit 1; }
+
+          # Verify key sections exist in index.html
+          for section in hero about experience education projects achievements contact; do
+            if grep -q "$section" public/index.html; then
+              echo "  Section '$section' found"
+            else
+              echo "::warning::Section '$section' may be missing from index.html"
+            fi
+          done
+
+      - name: Check image sizes
+        run: |
+          # Flag images larger than 1MB (slow page loads)
+          echo "Checking for oversized images..."
+          large_files=0
+          while IFS= read -r img; do
+            size=$(stat --format="%s" "$img")
+            if [[ $size -gt 1048576 ]]; then
+              size_mb=$(echo "scale=1; $size / 1048576" | bc)
+              echo "::warning file=${img}::Image is ${size_mb}MB — consider compressing"
+              large_files=$((large_files + 1))
+            fi
+          done < <(find public/images -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' -o -name '*.gif' -o -name '*.webp' \) 2>/dev/null)
+          if [[ $large_files -eq 0 ]]; then
+            echo "  All images under 1MB"
+          fi
+
+      - name: Check config validity
+        run: |
+          # Verify hugo.toml has no syntax errors by checking Hugo's config parsing
+          hugo config | head -5 && echo "  Config parsed successfully"
