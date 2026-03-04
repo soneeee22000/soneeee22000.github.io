@@ -37,16 +37,13 @@ jobs:
           # Find all href/src references in generated HTML and flag any pointing to missing local files
           errors=0
           for html_file in $(find public -name '*.html'); do
-            # Extract local href/src paths (skip external URLs, anchors, mailto, tel, javascript)
-            grep -oP '(?:href|src)="(/[^"]*)"' "$html_file" | grep -oP '"/[^"]*"' | tr -d '"' | while read -r path; do
-              # Skip anchor-only, external, and special links
-              [[ "$path" == "#"* ]] && continue
-              [[ "$path" == "//"* ]] && continue
+            # Extract local href/src paths (grep || true to handle no-match exit code)
+            paths=$(grep -oP '(?:href|src)="(/[^"]*)"' "$html_file" | grep -oP '"/[^"]*"' | tr -d '"' || true)
+            for path in $paths; do
+              # Skip anchor-only and protocol-relative links
+              [[ "$path" == "#"* || "$path" == "//"* ]] && continue
 
-              # Resolve path to public directory
               local_path="public${path}"
-
-              # Check if file or directory (with index.html) exists
               if [[ ! -f "$local_path" && ! -f "${local_path}index.html" && ! -f "${local_path}/index.html" ]]; then
                 echo "::warning file=${html_file}::Broken internal link: ${path}"
                 errors=$((errors + 1))
@@ -55,6 +52,8 @@ jobs:
           done
           if [[ $errors -gt 0 ]]; then
             echo "::warning::Found ${errors} potentially broken internal links"
+          else
+            echo "  No broken internal links found"
           fi
 
       - name: Validate HTML structure
