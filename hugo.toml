@@ -93,7 +93,7 @@ My work spans deep learning, NLP, computer vision, and agentic AI systems, with 
 I have experience designing end-to-end cloud data pipelines, developing evaluation-driven AI experiments, and contributing to smart city analytics as the sole data scientist in a fast-paced startup environment.
 Beyond technical depth, I bring strengths in linguistics, research design, and human-centric problem solving.
 I primarily code in Python (PyTorch, scikit-learn, FastAPI), and I am experienced with Azure, Docker, Git, microservice architectures, and full-stack prototyping.
-Currently, I am building AI-powered CreativeAI solutions at [Siloett.AI](https://siloett.ai/lander) (Station F, Paris) as a Founding AI Engineer.
+Currently, I am building AI-powered Compliance & Safety Tech solutions at [Siloett.AI](https://siloett.ai/lander) (Station F, Paris) as a Founding AI Engineer.
 """
 
     [params.about.skills]
@@ -233,20 +233,21 @@ Explored literary works and linguistic theories at Myanmar's oldest and most pre
   [params.projects]
   enable = true
 
-# PROJECT 1 - Star Trek (strongest, full-stack)
+# PROJECT 1 - VaxEvidence (strongest, full-stack)
     [[params.projects.items]]
-    title = "Project Star Trek"
-    content = "A mini narrative operating system for Star Trek: The Next Generation (TNG). Full-stack application enabling TNG episode data ingestion, blueprint generation from creative briefs, content validation, and vector-based search and retrieval for narrative elements."
-    image = "/images/projects/giphy.gif"
-    badges = [ "SQLAlchemy","FastAPI","Docker","React", "PostgreSQL + pgvector", "TypeScript" ]
+    title = "VaxEvidence"
+    content = "Real-World Evidence platform for vaccine research. Full-stack application for ingesting, analyzing, and visualizing vaccine safety and efficacy data from real-world sources."
+    image = "/images/projects/vaxevidence.png"
+    badges = [ "Next.js", "React", "TypeScript", "Supabase" ]
 
-      [params.projects.items.featured]
-      name = "Read"
-      link = "https://github.com/soneeee22000/Project-Star-Trek/blob/main/README.md"
+      # TODO: add links once URLs are ready
+      # [params.projects.items.featured]
+      # name = "Demo"
+      # link = ""
 
-      [[params.projects.items.links]]
-      icon = "fab fa-github"
-      url = "https://github.com/soneeee22000/Project-Star-Trek"
+      # [[params.projects.items.links]]
+      # icon = "fab fa-github"
+      # url = ""
 
 # PROJECT 2 - PsychHealth AI
     [[params.projects.items]]
