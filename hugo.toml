@@ -248,35 +248,35 @@ Explored literary works and linguistic theories at Myanmar's oldest and most pre
       icon = "fab fa-github"
       url = "https://github.com/soneeee22000/VaxEvidence-Dev"
 
-# PROJECT 2 - PsychHealth AI
+# PROJECT 2 - DocuQuery
     [[params.projects.items]]
-    title = "PsychHealth AI with RAG"
-    content = "An NLP application that provides mental health support using Retrieval-Augmented Generation (RAG) techniques, combining pre-trained language models with external knowledge sources."
-    image = "/images/projects/nlpapp.png"
-    badges = [ "NLP","PyTorch","Hugging Face" ]
+    title = "DocuQuery"
+    content = "AI-powered resume-job match analysis platform. Upload your resume and a job description to get a detailed compatibility score with category breakdowns (skills, experience, education, keywords), missing keyword identification, and prioritized improvement recommendations — all in under 30 seconds."
+    image = "/images/projects/docuquery.png"
+    badges = [ "Next.js", "FastAPI", "TypeScript", "PostgreSQL", "OpenAI" ]
 
       [params.projects.items.featured]
       name = "Demo"
-      link = "https://psych-ai-rag-mvp.streamlit.app/"
+      link = "https://docu-query-dev.vercel.app/dashboard"
 
       [[params.projects.items.links]]
       icon = "fab fa-github"
-      url = "https://github.com/soneeee22000/Psych_ai_with_RAG"
+      url = "https://github.com/soneeee22000/DocuQuery-dev"
 
-# PROJECT 3 - Ecoforecaster
+# PROJECT 3 - SafeGen
     [[params.projects.items]]
-    title = "Ecoforecaster"
-    content = "A web application with interactive dashboard for energy consumption analysis in France, providing AI-powered recommendations to reduce household energy costs and build a sustainable smart home."
-    image = "/images/projects/jouleof.png"
-    badges = ["Next.js","Python","JavaScript"]
+    title = "SafeGen.dev"
+    content = "Serverless middleware platform for enforcing responsible AI compliance on LLM applications. Acts as an intermediary between client apps and Azure OpenAI, validating responses against configurable safety rules — PII detection, bias screening, hate speech filtering, and RAG-powered custom policy enforcement via uploaded compliance documents."
+    image = "/images/projects/safegen.png"
+    badges = [ "React", "TypeScript", "Azure Functions", "FAISS", "GPT-4o" ]
 
       [params.projects.items.featured]
       name = "Demo"
-      link = "https://ai-energy-theta.vercel.app/"
+      link = "https://safe-gen-dev.vercel.app/"
 
       [[params.projects.items.links]]
       icon = "fab fa-github"
-      url = "https://github.com/soneeee22000/AI_Energy_Main_App"
+      url = "https://github.com/soneeee22000/SafeGen.dev"
 
 # PROJECT 4 - Diabetes classification
     [[params.projects.items]]
